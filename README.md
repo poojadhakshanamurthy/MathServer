@@ -123,10 +123,10 @@ path('',views.efficiency,name='efficiency'),]
 
 
 ## OUTPUT - SERVER SIDE:
-Screenshot 2025-12-09 203305.png
+![alt text](<Screenshot 2025-12-09 203305.png>)
 
 ## OUTPUT - WEBPAGE:
-Screenshot 2025-12-09 203324.png
+![alt text](<Screenshot 2025-12-09 203324.png>)
 
 ## RESULT:
 The a web page to calculate vehicle mileage and fuel efficiency using server-side scripts is created successfully.
