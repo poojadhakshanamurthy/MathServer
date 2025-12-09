@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>MILEAGE CALCULATOR</title>
+    <style>
+        .head{
+            gap:30;
+            position: fixed;
+            top:22%;
+            right: 40%;
+            border: solid  4px yellow;
+            border-radius: 20px;
+            background: lightskyblue;
+        }
+        input {
+            margin-top: 5px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: cyan;
+        }
+        .form{
+            border-radius: 30px;
+            width: 400px;
+        }
+        .submit{
+            color: red;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="head">
+        <h1><u>MILEAGE CALCULATOR</u></h1>
+        <h2>POOJA D</h2>
+        <h2>(25016436)</h2>
+
+        <form method="POST">
+
+                {% csrf_token %}
+                <label>Distance Travelled:</label>
+                <input type="number" value="{{D}}" name="distance_travelled">in (km)
+                <br>
+
+                <label>Fuel Consumed:</label>
+                <input type="number" name="fuel_consumed" value="{{f}}">in (l)
+                <br><br>
+
+                <input type="submit" value="Calculate">
+                <br>
+
+                <label>Mileage:</label>
+                <input type="number" name="m" value="{{m}}"> in (km/l)
+
+            </form>
+
+    </div>
+    </center>
+</body>
+</html>
